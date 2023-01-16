@@ -17,8 +17,9 @@ export default class Camera{
             35,
             this.sizes.aspect,
             0.1,
-            1000);
-        this.scene.add(this.perspectiveCamera)
+            1000
+            );
+        this.scene.add(this.perspectiveCamera);
     }
 
     createOrthographicCamera(){
@@ -31,7 +32,7 @@ export default class Camera{
             -100,
             100
         );
-        this.scene.add(this.orthographicCamera)
+        this.scene.add(this.orthographicCamera);
     }
 
     resize(){
@@ -48,7 +49,5 @@ export default class Camera{
         this.orthographicCamera.updateProjectionMatrix();
     }
 
-    update(){
-        
-    }
+    update(){}
 }
